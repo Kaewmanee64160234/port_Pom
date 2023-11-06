@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="intro">
+      <h1 style="margin: 0; color: #B3A492; font-weight: bold ;font-size: 72px; padding-top: 50px">
+        <center>MY PORTFOLIO</center>
+      </h1>
+      <div class="box-center">
+        <table>
+          <tr>
+            <td>
+              <button class="btn-cen btn-home" onclick="scrollToHome()">HOME</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn-cen btn-myprefromamnce">My Performance</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+   
+    <div id="home" class="history">
+     
+
+    </div>
+   
+  </body>
+ 
+</html>
+<script>
+  function scrollToHome() {
+    const homeSection = document.getElementById("home");
+    homeSection.scrollIntoView({ behavior: "smooth" });
+    console.log("scroll");
+  }
+</script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+  * {
+    font-family: "Comfortaa", cursive;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .intro{
+  
+    background-image: url("./100986.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .btn-home {
+    margin-bottom: 50px;
+  }
+  .btn-cen {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1 solid black;
+    font-size: larger;
+    background-color: #ed7d31;
+
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: center;
+  }
+  .btn-cen:hover {
+    background-color: #c66b2e;
+    cursor: pointer;
+  }
+
+
+  table {
+    text-align: center;
+  }
+  .box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  .history {
+    background-image: url("./100987.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
